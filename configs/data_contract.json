@@ -1,0 +1,52 @@
+{
+  "image": {
+    "shape": [
+      2,
+      256,
+      256
+    ],
+    "dtype": "float32",
+    "range": [
+      0,
+      1
+    ]
+  },
+  "matrix128": {
+    "shape": [
+      2,
+      3,
+      4
+    ],
+    "dtype": "float32",
+    "meaning": "Maps homogeneous output-grid (x,y,z,1) to image pixel centers"
+  },
+  "target": {
+    "shape": [
+      128,
+      128,
+      128
+    ],
+    "dtype": "uint8 or int64",
+    "labels": {
+      "0": "background",
+      "1": "L1",
+      "2": "L2",
+      "3": "L3",
+      "4": "L4",
+      "5": "L5"
+    }
+  },
+  "code": {
+    "shape": [
+      8,
+      32,
+      32,
+      32
+    ],
+    "meaning": "Optional RAW frozen-AE encoding, before standardization"
+  },
+  "pairing": "image and matrix128 must originate from the same crop; target provides supervision only",
+  "tensor_axes": "D=z, H=y, W=x; projection vector uses (x,y,z,1)",
+  "mask5": "Supervision/diagnostic only, never a generative inference input",
+  "warning": "Schema only; actual clinical data, codes and camera matrices are not included."
+}

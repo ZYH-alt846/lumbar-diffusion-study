@@ -1,0 +1,22 @@
+{
+  "cohort": "200 samples per configuration; 80 prior-validation cases for coverage",
+  "DDIM100": {
+    "validity": 0.985,
+    "diversity_volume_p10": 0.2266,
+    "diversity_occupancy_p10": 0.0601,
+    "near_copy_fraction": 0.035,
+    "coverage": 0.8875,
+    "foreground_volume_ratio": 0.87,
+    "gate": "FAIL"
+  },
+  "DDPM1000": {
+    "validity": 1.0,
+    "diversity_volume_p10": 0.2507,
+    "diversity_occupancy_p10": 0.0634,
+    "near_copy_fraction": 0.045,
+    "coverage": 0.925,
+    "foreground_volume_ratio": 0.965,
+    "gate": "PASS"
+  },
+  "limitation": "Same weights and initial noise; sampler stochasticity and step count not separated by this pair alone."
+}

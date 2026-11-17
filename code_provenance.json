@@ -1,0 +1,256 @@
+{
+  "release_date": "2026-11-17",
+  "symbols": [
+    {
+      "source_file": "baseline_model.py",
+      "symbol": "project_grid",
+      "source_file_sha256": "805b606fa3fbe0b446b01eea477fd3d579907f1ed09f998aa50a982a1a707595",
+      "original_symbol_sha256": "a45118f968ec86825f445755fedb226fe86c6b151cd8b4a1395a9cc0da9577e1",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "baseline_model.py",
+      "symbol": "lift_features",
+      "source_file_sha256": "805b606fa3fbe0b446b01eea477fd3d579907f1ed09f998aa50a982a1a707595",
+      "original_symbol_sha256": "e40cfbb6994b151bf8c5421135ec8920dd143bcc9d4b7fefb2cc9460802972a9",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "baseline_model.py",
+      "symbol": "block",
+      "source_file_sha256": "805b606fa3fbe0b446b01eea477fd3d579907f1ed09f998aa50a982a1a707595",
+      "original_symbol_sha256": "56d5ac8f9038e000d1ab642435ab326c3a43e47f224727225450ed4effee5208",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "ImageEncoder2d",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "a086d1ea134a908249dfec4b3ba1c3fd3290ac6f4284a1e517eef32b325cb13b",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "condition_volume",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "3007514e25176c754b2c293774a4677fbc1d9c3d466e61a713be8bc98a225245",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "Small3DUNet",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "331d5aaee387a214a87a4411e3eed5d8225c8f6e02a1c5441ed4c858c7a4e981",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "DeterministicRegressor",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "bd7fbeeb9bf86971511ecc255f64385e1706de81f437eea1bdd673332c47945e",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "ae_capacity_20261031.py",
+      "symbol": "voxel_shuffle",
+      "source_file_sha256": "e7f4b88e611a16e683a1266fbaad0633ce60cc5544b518d0aa2ff61e7fb710d1",
+      "original_symbol_sha256": "ddb34692a1d7c5dda627fccb905decf39cfad028f4bef93678b75d056ffc95a0",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "ae_subvoxel_candidate_20261101.py",
+      "symbol": "ResidualBlock",
+      "source_file_sha256": "dafc122fb9d70e55593d3cae59644782802539368de38e5add79ae3c05f846fa",
+      "original_symbol_sha256": "b4d66dae9636857c11ee134db02324e1484a74ec99c2f14718fa39330384205a",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "ae_subvoxel_candidate_20261101.py",
+      "symbol": "SubvoxelAE",
+      "source_file_sha256": "dafc122fb9d70e55593d3cae59644782802539368de38e5add79ae3c05f846fa",
+      "original_symbol_sha256": "0dce743ad71b109a11a50c522fb4266d5fb98e9f6d96008d45c85d35f86105fe",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "decode_logits",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "2c6593b9de74bdd08eb64f32e98d1c8c8dac26d045c979d39774c119850f788f",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "decode_labels",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "6ef19e0b99ed5f09dc94ddf92f5c4872dea1d684bdc09f7b265233dcf92407be",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "standardize",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "d3de7378a1e21bd3df41bdd0296460c2123b673b23a1ceee385b993282895b2e",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "unstandardize",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "999ad3ebc2bf2e40267880afb1ec77e8c8f228d720e3c88cc0a83f540b1c7515",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "latent_diffusion_baseline_20261105.py",
+      "symbol": "segmentation_loss",
+      "source_file_sha256": "5f60f8865cca1ac7249679d15d6ea8f2e4b911b0f71c3f4fd2336ebf27ea6cf0",
+      "original_symbol_sha256": "eb31a7f45e382d8de84a669479794e1a92944bb78fd98575d835c41166bbfe44",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_conditional_model_20261113.py",
+      "symbol": "time_embedding",
+      "source_file_sha256": "3882fefa86d839de75e4a70e0589133e74c886556459b0ff57ce5509aa376f16",
+      "original_symbol_sha256": "736c785b86a4b6263717cd038bf5684238f18727b4b8c7aceee52cf809172582",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_conditional_model_20261113.py",
+      "symbol": "ConditionalPrior",
+      "source_file_sha256": "3882fefa86d839de75e4a70e0589133e74c886556459b0ff57ce5509aa376f16",
+      "original_symbol_sha256": "c632f0c8237c5b9f8bfdd8506894f6946d4a25d03da62e3a9151ea9ed78403d3",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_conditional_model_20261113.py",
+      "symbol": "build_from_scratch",
+      "source_file_sha256": "3882fefa86d839de75e4a70e0589133e74c886556459b0ff57ce5509aa376f16",
+      "original_symbol_sha256": "85d1a68acd36f169605fc5e0bccad2fcb3fcc13cee8f24692e5059db0b5a9c1e",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_conditional_model_20261113.py",
+      "symbol": "build_deterministic",
+      "source_file_sha256": "3882fefa86d839de75e4a70e0589133e74c886556459b0ff57ce5509aa376f16",
+      "original_symbol_sha256": "46a9cf0d3613644088c291d2b2ece397fdb17627eec244eae473c59e4a9b1c82",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_conditional_model_20261113.py",
+      "symbol": "ConditionalDiffusion",
+      "source_file_sha256": "3882fefa86d839de75e4a70e0589133e74c886556459b0ff57ce5509aa376f16",
+      "original_symbol_sha256": "df39b5863d241790f328ee68f2fe6483b79230714888adb2e9ea878b8038737b",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_conditional_train_20261113.py",
+      "symbol": "DeterministicConditional",
+      "source_file_sha256": "ebaf28ef37c7cf9a20061c7840ee0bc461e8b272ef9b9b126356c96ec618cc9c",
+      "original_symbol_sha256": "6aa7373c8e3d1efcb42b2e1d29be0f85e29f718c21adfcd724da7f42e65c205a",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_sampler_20261112.py",
+      "symbol": "make_noise_buffers",
+      "source_file_sha256": "53c5ffedbe038a8185b6dc1beecac57e92d05ac996066c07c90785194e1ec55c",
+      "original_symbol_sha256": "8028f5cf4b06ced2285d23b92c76285556ef30e9982491014c56935b85829ee8",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_sampler_20261112.py",
+      "symbol": "q_sample",
+      "source_file_sha256": "53c5ffedbe038a8185b6dc1beecac57e92d05ac996066c07c90785194e1ec55c",
+      "original_symbol_sha256": "328c3e391c570cd514000cfd7cb1d94c3a90bab21eb3f3dc0fdc089c92aa8043",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_sampler_20261112.py",
+      "symbol": "v_target",
+      "source_file_sha256": "53c5ffedbe038a8185b6dc1beecac57e92d05ac996066c07c90785194e1ec55c",
+      "original_symbol_sha256": "24cc52717c46d9ca386fff496fbccdcbf8945214e819f2ba34be2ef3b67783a4",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_sampler_20261112.py",
+      "symbol": "ddim_sequence",
+      "source_file_sha256": "53c5ffedbe038a8185b6dc1beecac57e92d05ac996066c07c90785194e1ec55c",
+      "original_symbol_sha256": "88ceef98c7e9e8a1e5ce48bfd0735490b84455987cf2a85c7797ae9d874e582b",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_sampler_20261112.py",
+      "symbol": "sample_ddim_uncond",
+      "source_file_sha256": "53c5ffedbe038a8185b6dc1beecac57e92d05ac996066c07c90785194e1ec55c",
+      "original_symbol_sha256": "2ff7acc70c9d229412538327b11821fc2e3c8ee8cf3f457114285eb10565e593",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_sampler_ddpm_20261113.py",
+      "symbol": "ddpm_posterior",
+      "source_file_sha256": "7b16c6c731b169c1844d774dc291b6c0457d9f5d5d2d829175ea3c56e4c17150",
+      "original_symbol_sha256": "f898a0d21fe5e248d803fd3e87844ee01f1956df46cc1a381e51a46e67ed9a8c",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_sampler_ddpm_20261113.py",
+      "symbol": "sample_ddpm_uncond",
+      "source_file_sha256": "7b16c6c731b169c1844d774dc291b6c0457d9f5d5d2d829175ea3c56e4c17150",
+      "original_symbol_sha256": "265b99ebd0257a377d97bb50dea69bc7f9f136271023b1d7b8c5fa6fc5ae63ab",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "prior_conditional_sampler_20261113.py",
+      "symbol": "sample_ddpm_cond",
+      "source_file_sha256": "0fe560ebcda8a72d035731f0089a4c2079b103414ef783279415f1bd185ac765",
+      "original_symbol_sha256": "6039fbea6755b4b738e5bac760f4f2cc14d98c239150bff4882821b7e91d8c8a",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "bbdm_bridge_20261108.py",
+      "symbol": "BrownianBridge",
+      "source_file_sha256": "03f4953588c4ba541e60ab43504026dea1b06ea830cfe2ae970c6ea498d8ed68",
+      "original_symbol_sha256": "982eb78b13ce77c8045cb15ddf8f2705e2ba6a80e233cc18b6871ce7976f50e6",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "bbdm_bridge_20261108.py",
+      "symbol": "bridge_loss",
+      "source_file_sha256": "03f4953588c4ba541e60ab43504026dea1b06ea830cfe2ae970c6ea498d8ed68",
+      "original_symbol_sha256": "a99e58bfdbc774faac4290633b1b5994493884d10c6f167fcf1468c284018922",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "pose_shape_decomposition_20261031.py",
+      "symbol": "points",
+      "source_file_sha256": "8acc5bd6b4ea4b0cb1af26b23ea30cdb16a6a04c44017bb2ca775f3ed481c8d3",
+      "original_symbol_sha256": "b69c488360e56e104937041bded5566e57832a34249760b9da32a8fcfaea281c",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "pose_shape_decomposition_20261031.py",
+      "symbol": "distances",
+      "source_file_sha256": "8acc5bd6b4ea4b0cb1af26b23ea30cdb16a6a04c44017bb2ca775f3ed481c8d3",
+      "original_symbol_sha256": "153f052649ce10cd653e6fd31d6d81f17816791df13e904df0fa43450ff9e3b3",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "pose_shape_decomposition_20261031.py",
+      "symbol": "surface_metrics",
+      "source_file_sha256": "8acc5bd6b4ea4b0cb1af26b23ea30cdb16a6a04c44017bb2ca775f3ed481c8d3",
+      "original_symbol_sha256": "108f3e69717a3a8b94789c4a82ff7d98903143b550e31161f4a53fe687b675c2",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    },
+    {
+      "source_file": "pose_shape_decomposition_20261031.py",
+      "symbol": "dense_stats",
+      "source_file_sha256": "8acc5bd6b4ea4b0cb1af26b23ea30cdb16a6a04c44017bb2ca775f3ed481c8d3",
+      "original_symbol_sha256": "924135ef97f85dfd80e569a8b68b23160ad490c2536af9fdee65d0f9061d5047",
+      "scope": "Exact function/class body, imports assembled into the public package."
+    }
+  ],
+  "packaging_changes": [
+    "Imports consolidated into a standalone package.",
+    "Private path and data-loading entrypoints not copied.",
+    "New training-objective wrappers and aggregate tooling are explicitly new utilities."
+  ],
+  "equivalence_check": "Compare synthetic outputs against local original implementations before publishing; never include the local audit paths."
+}

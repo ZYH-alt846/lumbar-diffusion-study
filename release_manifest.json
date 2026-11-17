@@ -1,0 +1,210 @@
+{
+  "release_date": "2026-11-17",
+  "publication_state": "private-review snapshot",
+  "scope": "Core code, synthetic checks, aggregate statistics and curated documentation only",
+  "contains_patient_level_data": false,
+  "contains_weights": false,
+  "license_selected": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".githooks/pre-commit",
+      "bytes": 42,
+      "sha256": "54652b0986b03a9208135859a56e1cc7615f215c56fe4231c25f12980bf69151"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1275,
+      "sha256": "aaeada7cbd345cb6c8bd2e1d948fc10f2f143cd7c0c87fa116d81d82e401c60f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 747,
+      "sha256": "89740f49cc6fe5ab79c496f352231a1fa7263eee08415950383739c884451453"
+    },
+    {
+      "path": "LICENSE_STATUS.md",
+      "bytes": 967,
+      "sha256": "375fbc465de787f857e2328add6065e0563335bd706694287c47ba09dfe0aec4"
+    },
+    {
+      "path": "README.en.md",
+      "bytes": 1447,
+      "sha256": "258072615a661c5ff05c73c8c9e372e51ae6f2b1d34be5d3aa664a00ccb7b05a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4176,
+      "sha256": "07ecaedbdf4283cef67726b3aff82964a6f0f819a436f5664a5c212a39c7a52c"
+    },
+    {
+      "path": "assets/aggregate_results.svg",
+      "bytes": 38557,
+      "sha256": "fca5a5643afd3c6ffa7800960c6a1b22ac613965fc44703c157dfd6ac2f405d5"
+    },
+    {
+      "path": "code_provenance.json",
+      "bytes": 13953,
+      "sha256": "ef09bfe3fc641cfe6cd3c72648c9a886862580997b5e00fe48bbdb5186678833"
+    },
+    {
+      "path": "configs/conditional_comparison.json",
+      "bytes": 1796,
+      "sha256": "618010b469dadd917f4fbf3dc874268acb56306f4cfe01f264138eab3b284284"
+    },
+    {
+      "path": "configs/data_contract.json",
+      "bytes": 1038,
+      "sha256": "cd6091a9cc405f94a115f9c4969959d17ce6f2727f4ba1846a8bc8f2c0457078"
+    },
+    {
+      "path": "configs/prior.json",
+      "bytes": 470,
+      "sha256": "d57ad3aac0cbc063a6af67093ebfe68b844ecefe07e9fb1ce68da97dcdc733e2"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 530,
+      "sha256": "4a4135d04bdb708771ab4b3b09321ca7217b09858043ba17fce3b3675c556675"
+    },
+    {
+      "path": "data/aggregate/core_results.csv",
+      "bytes": 395,
+      "sha256": "37239df4f8a82dff5151fd55c9172cf63adf0ce6075152e51055a0da91817ccb"
+    },
+    {
+      "path": "data/aggregate/diagnostics.json",
+      "bytes": 4271,
+      "sha256": "22b6dff1801f81c5aac741902374937930a96e45dccdf8210662a5aea6ddc9ba"
+    },
+    {
+      "path": "data/aggregate/prior_sampling.json",
+      "bytes": 671,
+      "sha256": "77c5b4457da5e30b2ee396c27f87c57e9d4a0a4336d2a420d87713cda10af9a5"
+    },
+    {
+      "path": "data/aggregate/selection_curves.csv",
+      "bytes": 2411,
+      "sha256": "477960aa848e519edd3a944f3f09bcfa7e332d02b2f5728c8c0f2db077906b23"
+    },
+    {
+      "path": "docs/CORRECTIONS.md",
+      "bytes": 1419,
+      "sha256": "1d3cefb2382d16636715d40c30df7881128ff6c067e95909c28ddb438a3e0943"
+    },
+    {
+      "path": "docs/DATA_AND_PRIVACY.md",
+      "bytes": 1730,
+      "sha256": "b068bc01ef01c495020872a2a50324e38241295c62485ebdf419cb5f91943c88"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "bytes": 4544,
+      "sha256": "e9a2fec4e3e7b83c0cbbd724ddef97a219d1b351713afc36d34ecb1738a008ff"
+    },
+    {
+      "path": "docs/FINDINGS.md",
+      "bytes": 2094,
+      "sha256": "58970604bdeb14bda596964518a9e9ec90374d2771e8df73eeb022d91163b0c7"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_CHECKS.md",
+      "bytes": 1226,
+      "sha256": "772235fc56b6566daa7daac5c741dd3d21d62fdacc3f72d1340d06c621605a37"
+    },
+    {
+      "path": "docs/REFERENCES.md",
+      "bytes": 1336,
+      "sha256": "709be3fe8f0793cfba2438c051d00215dc78fa76a415dcd9da277e09af0d0bf8"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 1896,
+      "sha256": "a2fbf3003555b5f259f75106bdee2c4a289c3080618ae9e73f52c1d81f85e632"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 383,
+      "sha256": "50e6e52cb211ae7ecfbc87919176080dac17cdbde6b894f37217f272db4a6cf6"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 44,
+      "sha256": "f54cbc471670bf14a9556264fa165517d4a9469bc2547cc36548d8fdff522178"
+    },
+    {
+      "path": "scripts/privacy_audit.py",
+      "bytes": 4869,
+      "sha256": "be36c6957482752107807e88c7730ff26e7bddb6d238f809e2aa9aaf36d95953"
+    },
+    {
+      "path": "scripts/smoke.py",
+      "bytes": 2948,
+      "sha256": "b1661c24b89eea97da61da73552907572286f1574edd8bc0bdc0b4cd8f2b77bd"
+    },
+    {
+      "path": "scripts/summarize_results.py",
+      "bytes": 1164,
+      "sha256": "e953c88a5e1ef5598d26c50da14fbd7d509d438a20427a4492d2506d42158eac"
+    },
+    {
+      "path": "src/lumbar_diffusion/__init__.py",
+      "bytes": 88,
+      "sha256": "f221c5b6e0435e5de21b54455c5f520e970b4e3883f018ffd9f8aa096be9236d"
+    },
+    {
+      "path": "src/lumbar_diffusion/autoencoder.py",
+      "bytes": 3981,
+      "sha256": "afadc87aad0c1ed9391fc0df876cd357d524b54528f92dd518a4e47804d98c9d"
+    },
+    {
+      "path": "src/lumbar_diffusion/bridge.py",
+      "bytes": 7733,
+      "sha256": "a57f7329a79259ace12101fca65ddbf64b5437536814f7c36e9f2d4742818a2b"
+    },
+    {
+      "path": "src/lumbar_diffusion/conditioning.py",
+      "bytes": 6051,
+      "sha256": "723bbbe3d74222af6ff09fdc57dcdfe1d01254f68141f588721b732821d28496"
+    },
+    {
+      "path": "src/lumbar_diffusion/diffusion.py",
+      "bytes": 7254,
+      "sha256": "08c631f220bd7fa0977e57f8ecc520f3504923e2e30cd9409bc9feb570ccf004"
+    },
+    {
+      "path": "src/lumbar_diffusion/geometry.py",
+      "bytes": 2637,
+      "sha256": "d6ff18524f1608e5c0d75c61519ef3b7dde050c0412cb9b431df6a071c841c85"
+    },
+    {
+      "path": "src/lumbar_diffusion/metrics.py",
+      "bytes": 2701,
+      "sha256": "cbc97628c1a1d07e71e36cbe911ec1c1e9d72217386e1f211622a993c3be524a"
+    },
+    {
+      "path": "src/lumbar_diffusion/networks.py",
+      "bytes": 3805,
+      "sha256": "3466967a7d22fd9f9a57cd75738737139e25e34146e24b905aafdd0e24f21626"
+    },
+    {
+      "path": "src/lumbar_diffusion/training.py",
+      "bytes": 845,
+      "sha256": "eb2765e0e53b269e29da9a38055544f8eed7e95fd4af42d93aee1c7d7f2efd82"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 5155,
+      "sha256": "0adaa6d919c1994a6bd954beea441c011fe87c9c382bead9edea7456289ef35d"
+    },
+    {
+      "path": "tests/test_privacy.py",
+      "bytes": 2233,
+      "sha256": "93ba1782df5008a5e4ef74c1b948a555e1033567df58984f053fa36cf7476c1a"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "status": "Historical configuration; not an instruction to start a new experiment",
+  "train_cases": 795,
+  "select_cases": 34,
+  "prior_fit_cases": 715,
+  "prior_validation_cases": 80,
+  "gradient_excluded_select": true,
+  "batch_size": 32,
+  "updates_per_arm": 150000,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.01
+  },
+  "training_seed": 20261113,
+  "checkpoint_interval": 10000,
+  "selection": "Highest patient-mean Dice, earlier checkpoint on an exact tie",
+  "latent_shape": [
+    8,
+    32,
+    32,
+    32
+  ],
+  "label_shape": [
+    128,
+    128,
+    128
+  ],
+  "spacing_mm": 2.75,
+  "background_bias": 4.45,
+  "statistics_fitted_on": 715,
+  "noise": {
+    "timesteps": 1000,
+    "beta_start": 0.0001,
+    "beta_end": 0.02,
+    "parameterization": "v"
+  },
+  "sampling": {
+    "name": "DDPM",
+    "steps": 1000,
+    "variance": "posterior beta_tilde",
+    "samples_per_case": 5,
+    "initial_seed_base": 100000000,
+    "reverse_seed_base": 200000000,
+    "case_rank_stride": 100
+  },
+  "arms": {
+    "CD-F": {
+      "backbone": "pretrained frozen",
+      "loss": "v-MSE",
+      "total_params": 4328048,
+      "trainable_params": 1743464
+    },
+    "CD-S": {
+      "backbone": "random jointly trained",
+      "loss": "v-MSE",
+      "total_params": 4328048,
+      "trainable_params": 4328048
+    },
+    "CR": {
+      "base": 64,
+      "loss": "decoded CE + foreground soft Dice",
+      "total_params": 2611864,
+      "trainable_params": 2611864
+    }
+  },
+  "quality_rule": {
+    "dice_margin_vs_best_control": 0.01,
+    "hd95_absolute_limit_mm": 5.271851082433783,
+    "hd95_tolerance_vs_best_dice_control_mm": 0.5,
+    "miss_count": 0
+  },
+  "condition_rule": {
+    "real_minus_donor_min": 0.02,
+    "case_bootstrap_ci95_lower_positive": true
+  }
+}

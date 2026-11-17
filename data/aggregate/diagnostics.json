@@ -1,0 +1,174 @@
+{
+  "cohort": "34 repeatedly used internal selection cases; exploratory, not final test",
+  "paired_case_bootstrap": {
+    "scratch": {
+      "mean": -0.012229325001794472,
+      "ci95": [
+        -0.019462241499450667,
+        -0.004858844054776575
+      ],
+      "positive": 10,
+      "negative": 24,
+      "equal": 0
+    },
+    "deterministic": {
+      "mean": -0.022126504555876756,
+      "ci95": [
+        -0.030483365343421557,
+        -0.012327701829011177
+      ],
+      "positive": 3,
+      "negative": 31,
+      "equal": 0
+    },
+    "A0R": {
+      "mean": -0.03662866044484308,
+      "ci95": [
+        -0.04521583976783298,
+        -0.027863260236114934
+      ],
+      "positive": 2,
+      "negative": 32,
+      "equal": 0
+    }
+  },
+  "ae_roundtrip_bias_sensitivity": {
+    "0.0": {
+      "dice": 0.929918041161062,
+      "hd95_mm": 2.75,
+      "volume_ratio": 1.1239893097967641,
+      "abs_volume_error": 0.12398930979676409
+    },
+    "3.95": {
+      "dice": 0.9553434143078587,
+      "hd95_mm": 2.75,
+      "volume_ratio": 1.0168630270954329,
+      "abs_volume_error": 0.01723098515470361
+    },
+    "4.45": {
+      "dice": 0.9557372252172788,
+      "hd95_mm": 2.75,
+      "volume_ratio": 1.0048245970231457,
+      "abs_volume_error": 0.008383975656493653
+    },
+    "4.95": {
+      "dice": 0.9553218268682884,
+      "hd95_mm": 2.75,
+      "volume_ratio": 0.9926353430554556,
+      "abs_volume_error": 0.009085706338790444
+    }
+  },
+  "ae_per_vertebra_bias_4p45": {
+    "L1": {
+      "dice": 0.9620045554568314,
+      "hd95_mm": 2.75,
+      "volume_ratio": 1.0011905908281615,
+      "abs_ratio_error": 0.007191761808290499
+    },
+    "L2": {
+      "dice": 0.9562790105816487,
+      "hd95_mm": 2.75,
+      "volume_ratio": 1.0059845383641821,
+      "abs_ratio_error": 0.008015215786831457
+    },
+    "L3": {
+      "dice": 0.9535511866209176,
+      "hd95_mm": 2.75,
+      "volume_ratio": 0.9970614520281389,
+      "abs_ratio_error": 0.006091272620932401
+    },
+    "L4": {
+      "dice": 0.9520967327073322,
+      "hd95_mm": 2.75,
+      "volume_ratio": 1.008331448594624,
+      "abs_ratio_error": 0.008875962475912033
+    },
+    "L5": {
+      "dice": 0.9547546407196646,
+      "hd95_mm": 2.75,
+      "volume_ratio": 1.0115549553006224,
+      "abs_ratio_error": 0.011745665590501872
+    }
+  },
+  "translation": {
+    "before_gap": {
+      "mean": 0.03663596012593615,
+      "ci95": [
+        0.027867541665686443,
+        0.04522823822035886
+      ]
+    },
+    "after_gap": {
+      "mean": 0.02315508671655588,
+      "ci95": [
+        0.012028668373251285,
+        0.031964870323971536
+      ]
+    },
+    "gap_reduction": {
+      "mean": 0.013480873409380277,
+      "ci95": [
+        0.007042542428941224,
+        0.02077984627865683
+      ]
+    },
+    "fraction_gap_reduced": 0.3679683393867599
+  },
+  "rigid_seed0": {
+    "before_gap": {
+      "mean": 0.03645859152963834,
+      "ci95": [
+        0.026566451916196526,
+        0.04573471218736054
+      ]
+    },
+    "after_gap": {
+      "mean": 0.013857181639363688,
+      "ci95": [
+        0.006793147303068565,
+        0.020203028901691848
+      ]
+    },
+    "gap_reduction": {
+      "mean": 0.022601409890274655,
+      "ci95": [
+        0.014064914503338776,
+        0.03173332212288419
+      ]
+    },
+    "fraction_gap_reduced": 0.6199199953158162
+  },
+  "conditional_rule_validity": {
+    "n": 170,
+    "valid": 169,
+    "fraction": 0.9941176470588236
+  },
+  "donor_joint_condition": {
+    "mean_difference": 0.2436344492,
+    "ci95": [
+      0.2096862203,
+      0.2840613306
+    ],
+    "positive_cases": 34,
+    "n_cases": 34,
+    "intervention": "Replace image AND projection matrices together",
+    "limitation": "Only case-mean differences retained; raw donor per-seed scores unavailable."
+  },
+  "dice_gap_decomposition": {
+    "volume_share": 0.144944,
+    "overlap_share": 0.855056,
+    "type": "Row-level numerical decomposition, not causal shares"
+  },
+  "seed_variability": {
+    "main": {
+      "seed_sd_mean": 0.004828615951990162,
+      "seed_sd_median": 0.004720284709685629,
+      "seed_sd_max": 0.015409003208807167
+    },
+    "scratch": {
+      "seed_sd_mean": 0.0033197670408329064,
+      "seed_sd_median": 0.0035287597426523288,
+      "seed_sd_max": 0.006284278725129617
+    }
+  }
+}

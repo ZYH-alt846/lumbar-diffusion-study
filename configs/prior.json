@@ -1,0 +1,23 @@
+{
+  "stage": "independent unconditional label prior",
+  "fit_cases": 715,
+  "validation_cases": 80,
+  "seed": 20261112,
+  "batch_size": 32,
+  "updates": 200000,
+  "base": 64,
+  "latent_shape": [
+    8,
+    32,
+    32,
+    32
+  ],
+  "loss": "v-MSE",
+  "timesteps": 1000,
+  "beta_start": 0.0001,
+  "beta_end": 0.02,
+  "final_sampler": "DDPM1000 posterior variance",
+  "normalization": "715-fit channel-wise mean/std",
+  "ae_frozen": true,
+  "weights_distributed": false
+}

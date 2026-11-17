@@ -1,0 +1,5 @@
+method,selected_update,dice,hd95_mm,miss_count,cohort,n_cases,training_seeds,inference_samples_per_case
+CD-F,70000,0.7877838396587534,5.055416251500706,0,internal_select,34,1,5
+CD-S,30000,0.8000131646605481,5.036816164058915,0,internal_select,34,1,5
+CR,10000,0.8099103442146303,4.851116213269714,0,internal_select,34,1,1
+DPR-R,28000,0.8244125001035967,4.771851082433783,0,internal_select,34,1,1
