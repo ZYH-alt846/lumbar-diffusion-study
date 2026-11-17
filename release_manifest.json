@@ -1,7 +1,7 @@
 {
   "release_date": "2026-11-17",
-  "publication_state": "private-review snapshot",
-  "scope": "Core code, synthetic checks, aggregate statistics and curated documentation only",
+  "publication_state": "private",
+  "scope": "Research code, experiment records and aggregate results",
   "contains_patient_level_data": false,
   "contains_weights": false,
   "license_selected": false,
@@ -18,28 +18,23 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 1275,
-      "sha256": "aaeada7cbd345cb6c8bd2e1d948fc10f2f143cd7c0c87fa116d81d82e401c60f"
-    },
-    {
-      "path": "AGENTS.md",
-      "bytes": 747,
-      "sha256": "89740f49cc6fe5ab79c496f352231a1fa7263eee08415950383739c884451453"
+      "bytes": 1230,
+      "sha256": "f624ba6bb4db3eb03fdaf6d337c7ed7ceb24552f3dfe77e43d886274b7200b44"
     },
     {
       "path": "LICENSE_STATUS.md",
-      "bytes": 967,
-      "sha256": "375fbc465de787f857e2328add6065e0563335bd706694287c47ba09dfe0aec4"
+      "bytes": 461,
+      "sha256": "b8c55f0b45ee37a16abc1b31a4e25e38e6da5f7535509adaaa50ea4b1aeadc81"
     },
     {
       "path": "README.en.md",
-      "bytes": 1447,
-      "sha256": "258072615a661c5ff05c73c8c9e372e51ae6f2b1d34be5d3aa664a00ccb7b05a"
+      "bytes": 2141,
+      "sha256": "c113e9f551a46638ff14c8016a8a1e3539170fc9200873239ecef82296014550"
     },
     {
       "path": "README.md",
-      "bytes": 4176,
-      "sha256": "07ecaedbdf4283cef67726b3aff82964a6f0f819a436f5664a5c212a39c7a52c"
+      "bytes": 4811,
+      "sha256": "c10c71d2908f34149e45a7e5568c16a4ca99a85b441ef02eafabf87301d72365"
     },
     {
       "path": "assets/aggregate_results.svg",
@@ -48,13 +43,13 @@
     },
     {
       "path": "code_provenance.json",
-      "bytes": 13953,
-      "sha256": "ef09bfe3fc641cfe6cd3c72648c9a886862580997b5e00fe48bbdb5186678833"
+      "bytes": 12516,
+      "sha256": "1d87caecb8fbf0e0d4f37f096b6093d70a888a59d9c9afd5587f41032dfd4980"
     },
     {
       "path": "configs/conditional_comparison.json",
-      "bytes": 1796,
-      "sha256": "618010b469dadd917f4fbf3dc874268acb56306f4cfe01f264138eab3b284284"
+      "bytes": 1746,
+      "sha256": "a2711ed59baa50cb62d90302011f741012c453487d640129451c62389cbad003"
     },
     {
       "path": "configs/data_contract.json",
@@ -68,8 +63,8 @@
     },
     {
       "path": "data/README.md",
-      "bytes": 530,
-      "sha256": "4a4135d04bdb708771ab4b3b09321ca7217b09858043ba17fce3b3675c556675"
+      "bytes": 358,
+      "sha256": "1909e24afefd1f34d061aee54b189f4b95dee4fd7281545434e7e005734b702f"
     },
     {
       "path": "data/aggregate/core_results.csv",
@@ -92,29 +87,24 @@
       "sha256": "477960aa848e519edd3a944f3f09bcfa7e332d02b2f5728c8c0f2db077906b23"
     },
     {
-      "path": "docs/CORRECTIONS.md",
-      "bytes": 1419,
-      "sha256": "1d3cefb2382d16636715d40c30df7881128ff6c067e95909c28ddb438a3e0943"
+      "path": "docs/CODE_GUIDE.md",
+      "bytes": 3547,
+      "sha256": "51967e6b516515e0ddce28700b83ed03eded4de3c41fa84ca3e297f2a2fb17fd"
     },
     {
       "path": "docs/DATA_AND_PRIVACY.md",
-      "bytes": 1730,
-      "sha256": "b068bc01ef01c495020872a2a50324e38241295c62485ebdf419cb5f91943c88"
+      "bytes": 1127,
+      "sha256": "2cbb34da16368b46f9a0ec869fcba9ff191ccccf174029566a13a285c381648d"
     },
     {
       "path": "docs/EXPERIMENTS.md",
-      "bytes": 4544,
-      "sha256": "e9a2fec4e3e7b83c0cbbd724ddef97a219d1b351713afc36d34ecb1738a008ff"
+      "bytes": 9101,
+      "sha256": "246401fd65db96a7752197d36d405b62bc301be624324a929e56f20f9e7dd9c8"
     },
     {
       "path": "docs/FINDINGS.md",
-      "bytes": 2094,
-      "sha256": "58970604bdeb14bda596964518a9e9ec90374d2771e8df73eeb022d91163b0c7"
-    },
-    {
-      "path": "docs/IMPLEMENTATION_CHECKS.md",
-      "bytes": 1226,
-      "sha256": "772235fc56b6566daa7daac5c741dd3d21d62fdacc3f72d1340d06c621605a37"
+      "bytes": 3156,
+      "sha256": "c19753b4f2f608584f79abb97bcf47d19c11a9ae82ffd6dfafdd680e77cbe6d1"
     },
     {
       "path": "docs/REFERENCES.md",
@@ -123,8 +113,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 1896,
-      "sha256": "a2fbf3003555b5f259f75106bdee2c4a289c3080618ae9e73f52c1d81f85e632"
+      "bytes": 2401,
+      "sha256": "628e1af790539fb198560e8ea75070fbeff62d5b15e717a5864e3e123b8af042"
     },
     {
       "path": "pyproject.toml",
@@ -153,8 +143,8 @@
     },
     {
       "path": "src/lumbar_diffusion/__init__.py",
-      "bytes": 88,
-      "sha256": "f221c5b6e0435e5de21b54455c5f520e970b4e3883f018ffd9f8aa096be9236d"
+      "bytes": 90,
+      "sha256": "5a04e54261b7cda269aad9dd809e0b825db71ffebb68015547de8cdc5211a1df"
     },
     {
       "path": "src/lumbar_diffusion/autoencoder.py",

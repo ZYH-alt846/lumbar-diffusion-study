@@ -13,7 +13,6 @@
 !/src/lumbar_diffusion/
 !/.gitattributes
 !/.githooks/pre-commit
-!/AGENTS.md
 !/LICENSE_STATUS.md
 !/README.en.md
 !/README.md
@@ -27,11 +26,10 @@
 !/data/aggregate/diagnostics.json
 !/data/aggregate/prior_sampling.json
 !/data/aggregate/selection_curves.csv
-!/docs/CORRECTIONS.md
+!/docs/CODE_GUIDE.md
 !/docs/DATA_AND_PRIVACY.md
 !/docs/EXPERIMENTS.md
 !/docs/FINDINGS.md
-!/docs/IMPLEMENTATION_CHECKS.md
 !/docs/REFERENCES.md
 !/docs/REPRODUCIBILITY.md
 !/pyproject.toml

@@ -1,24 +1,23 @@
-# 数据来源和隐私发布范围
+# 数据来源与结果文件
 
-数据引用：[PPCNet](https://huggingface.co/datasets/ppcnet-dataset/PPCNet)，
-DOI 10.57967/hf/9944；其上游包括VerSe和CTSpine1K。
-查阅日2026-11-17。官方数据当前为申请访问，许可及上游条款需要同时满足。
-[许可第5节](https://huggingface.co/datasets/ppcnet-dataset/PPCNet/blob/main/LICENSE)
-限制未经权利人书面许可公开再分发完整数据或实质部分。
+本项目使用[PPCNet](https://huggingface.co/datasets/ppcnet-dataset/PPCNet)，
+DOI为10.57967/hf/9944，其上游包括VerSe和CTSpine1K。
+数据需通过官方页面申请，使用时遵守PPCNet和上游数据的许可。
 
-因此本版只分发聚合成绩、汇总诊断、数据契约和独立合成示例的生成代码。
-没有上传CT/DRR、标签、投影矩阵、逐病例数据、代码缓存、模型权重、真实结果图、
-原病例编号、服务器地址、账号凭据、个人姓名、邮箱、绝对路径或原始Git历史。
-潜码和权重可能带有训练数据或元数据风险，也暂不随包发布。
+## 输入与标签
 
-聚合输出由指定字段重建，没有把整个原始JSON改名后复制。原项目的Word、PDF、
-日志和截图未进入仓库，避免文档作者、截图账号和路径元数据泄露。
-可视化仅根据聚合表重新生成，不展示真实患者。
+每例使用正位、侧位DRR及对应的3×4投影矩阵。标签中的L1–L5重映射为1–5，
+背景为0。模型输入256²，标签输出128³，完整接口见
+[data_contract.json](../configs/data_contract.json)。
 
-上传采用新建历史、文件白名单、单文件大小上限、敏感模式扫描和提交前复核。
-自动检查是当前文件集的检查，不能保证未来新增任意文件安全。后续提交必须重新检查。
-即使仓库为私有也应遵守这些范围。GitHub账号名和平台活动仍可见于仓库成员，
-将来公开仓库也不会自动隐藏个人GitHub资料；提交应使用平台noreply邮箱。
+## 仓库保存的结果
 
-目前没有指定代码开源许可。私有审核通过不等于自动公开；数据和权重如要另行发布，
-须分别确认隐私、许可与再分发条件。
+- `core_results.csv`：最终方法比较。
+- `selection_curves.csv`：三种条件模型的45个选择集评价点。
+- `diagnostics.json`：病例配对的汇总、AE敏感性、条件替换及配准结果。
+- `prior_sampling.json`：独立先验的两种采样设置比较。
+
+原始影像、标签、病例明细、潜码与权重不在仓库中分发。
+代码中的合成张量用于检查接口，与研究结果无关。
+[数据许可](https://huggingface.co/datasets/ppcnet-dataset/PPCNet/blob/main/LICENSE)
+对数据再分发有单独要求；代码的许可不替代数据许可。
