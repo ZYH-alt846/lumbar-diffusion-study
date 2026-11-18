@@ -25,6 +25,7 @@
 !/data/aggregate/core_results.csv
 !/data/aggregate/diagnostics.json
 !/data/aggregate/prior_sampling.json
+!/data/aggregate/public_baseline.json
 !/data/aggregate/selection_curves.csv
 !/docs/CODE_GUIDE.md
 !/docs/DATA_AND_PRIVACY.md

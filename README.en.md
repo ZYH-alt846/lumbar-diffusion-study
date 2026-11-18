@@ -18,9 +18,17 @@ had zero missing vertebrae.
 The conditional model responded to patient-specific image/matrix pairs:
 real conditions improved Dice by 0.2436 relative to fixed donor conditions.
 This response did not close the reconstruction gap. Label-AE round-trip Dice
-was 0.9557. Ground-truth-assisted translation reduced the gap by 36.8%; a
-seed-0 rigid-registration analysis reduced its corresponding gap by 62.0%.
-These registration results describe alignment error and are not inference procedures.
+was 0.9557. With matched seed-0 outputs, one ground-truth-assisted rigid
+transform shared by L1–L5 reduced the gap by 28.0%; independent per-vertebra
+registration reduced it by 62.0%. The latter permits changes in inter-vertebra
+arrangement and cannot be read as whole-spine pose error. These are diagnostic
+procedures that use ground truth.
+
+An archived Swin-X2S-Tiny adaptation scored 0.7907 Dice on the same 34 cases,
+with no missing vertebrae; same-cohort HD95 was not saved. It used 128² inputs,
+fresh initialization and 100 epochs, rather than the paper's main configuration.
+CD-F minus this adaptation was −0.0030 Dice (95% interval, −0.0164 to 0.0162).
+See the [public-method comparison](data/aggregate/public_baseline.json).
 
 The 34 cases were used for development and checkpoint selection. The final
 105-case test evaluation and independent training repeats remain outstanding.

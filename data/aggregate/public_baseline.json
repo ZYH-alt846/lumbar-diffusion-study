@@ -1,0 +1,76 @@
+{
+  "method": "Swin-X2S Tiny adapted, corrected native XYZ axes",
+  "n_cases": 34,
+  "checkpoint_epoch": 50,
+  "selected_update": 39750,
+  "dice": 0.790746719063956,
+  "hd95_mm": null,
+  "miss_count": 0,
+  "per_vertebra_dice": {
+    "L1": 0.7818438607650575,
+    "L2": 0.7965365434478348,
+    "L3": 0.809224588676232,
+    "L4": 0.7993156453817439,
+    "L5": 0.7668129570489117
+  },
+  "paired_comparisons": {
+    "main_minus_swin": {
+      "mean": -0.002962879405202427,
+      "ci95": [
+        -0.016388557660729726,
+        0.016205144023790162
+      ],
+      "positive_cases": 11,
+      "negative_cases": 23
+    },
+    "scratch_minus_swin": {
+      "mean": 0.009266445596592045,
+      "ci95": [
+        -0.0020622091552958376,
+        0.024023955586714003
+      ],
+      "positive_cases": 14,
+      "negative_cases": 20
+    },
+    "deterministic_minus_swin": {
+      "mean": 0.01916362515067433,
+      "ci95": [
+        0.008178132701567191,
+        0.032151447851176185
+      ],
+      "positive_cases": 21,
+      "negative_cases": 13
+    }
+  },
+  "limitations": [
+    "Tiny 128^3 instead of pretrained Base main configuration",
+    "fresh init, no ImageNet-22K weights",
+    "100 epochs instead of 250",
+    "intensity-only augmentation",
+    "explicit Dice smooth_nr0/smooth_dr1e-6",
+    "no gradient clip; AdamW decay applies to all parameters",
+    "Single training seed; repeatedly used selection set; no same-cohort HD95 yet."
+  ],
+  "cohort": "Same 795 training and 34 internal selection cases; no final test evaluation",
+  "configuration": {
+    "variant": "Tiny",
+    "input_size": [
+      128,
+      128
+    ],
+    "output_size": [
+      128,
+      128,
+      128
+    ],
+    "pretrained": false,
+    "epochs": 100,
+    "batch_size": 1,
+    "optimizer": "AdamW",
+    "learning_rate": 3e-05,
+    "weight_decay": 0.5
+  },
+  "hd95_status": "Not saved for these34 selection cases; no other cohort substituted",
+  "comparison_unit": "case; 10000 paired bootstrap resamples, seed20261117",
+  "raw_case_rows_included": false
+}

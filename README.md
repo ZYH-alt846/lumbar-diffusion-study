@@ -48,6 +48,11 @@ L1–L5 的三维分割标签。实验从确定性重建基线开始，先后尝
 四种方法漏检均为0。CR、CD-S和CD-F分别在10k、30k和70k更新取得最高选择集Dice。
 DPR-R沿用此前锁定的确定性模型，它的容量和训练预算与另外三种方法不同。
 
+同一34例的公开方法参考Swin-X2S-Tiny适配Dice为0.7907，漏检0。
+该适配使用128²输入、无预训练和100轮预算；这34例的HD95未保存。
+CD-F减Swin的病例配对差为−0.0030，95%区间[−0.0164, 0.0162]。
+它是任务适配对照，不能当作原论文主配置的复现。详见[公开方法记录](data/aggregate/public_baseline.json)。
+
 ![选择集上的重建结果](assets/aggregate_results.svg)
 
 ## 目前的发现
@@ -57,9 +62,9 @@ DPR-R沿用此前锁定的确定性模型，它的容量和训练预算与另外
 患者的联合条件生成结果。当前的困难在于把这种条件响应转化为更准确的三维重建。
 
 AE在34例真值标签上的往返Dice为0.9557。进一步分析中，体积不平衡项约占方法
-差距的14.5%，其余主要落在重叠项。真值辅助平移使差距缩小36.8%，固定seed0的
-刚体配准使对应差距缩小62.0%。这些结果把后续关注点引向了空间对齐；配准使用
-真值，只作为误差分析，不能用于推理。
+差距的14.5%，其余主要落在重叠项。固定seed0下，整段L1–L5共用一个刚体变换，
+差距缩小28.0%；五个椎体分别独立配准时缩小62.0%。后者允许改变椎体间相对排列，
+不能全部解释成整段姿态误差。配准使用真值，只作为诊断，不能用于推理。
 
 详细数值见 [结果分析](docs/FINDINGS.md)。
 
@@ -85,6 +90,7 @@ python scripts/summarize_results.py
 - [三种方法的45个选点](data/aggregate/selection_curves.csv)
 - [AE、条件替换和配准分析](data/aggregate/diagnostics.json)
 - [独立先验的采样比较](data/aggregate/prior_sampling.json)
+- [同队列公开方法参考](data/aggregate/public_baseline.json)
 
 原始数据请通过 [PPCNet](https://huggingface.co/datasets/ppcnet-dataset/PPCNet) 申请获取。
 仓库保留汇总结果，不分发真实影像、病例明细、潜编码或模型权重。

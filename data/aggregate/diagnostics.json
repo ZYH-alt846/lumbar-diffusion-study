@@ -115,28 +115,38 @@
     "fraction_gap_reduced": 0.3679683393867599
   },
   "rigid_seed0": {
+    "n_cases": 34,
+    "seed": 0,
+    "transform_unit": "Independent R,t for each of five vertebrae",
     "before_gap": {
       "mean": 0.03645859152963834,
       "ci95": [
-        0.026566451916196526,
-        0.04573471218736054
+        0.02666770498076262,
+        0.04589997968037662
       ]
     },
     "after_gap": {
       "mean": 0.013857181639363688,
       "ci95": [
-        0.006793147303068565,
-        0.020203028901691848
+        0.00644684593604398,
+        0.02024928232076291
       ]
     },
     "gap_reduction": {
       "mean": 0.022601409890274655,
       "ci95": [
-        0.014064914503338776,
-        0.03173332212288419
+        0.0140981407134828,
+        0.03187157311047599
       ]
     },
-    "fraction_gap_reduced": 0.6199199953158162
+    "fraction_gap_reduced": 0.619919995315816,
+    "bootstrap": {
+      "unit": "case",
+      "replicates": 10000,
+      "seed": 20261117
+    },
+    "uses_ground_truth": true,
+    "deployment_method": false
   },
   "conditional_rule_validity": {
     "n": 170,
@@ -169,6 +179,56 @@
       "seed_sd_mean": 0.0033197670408329064,
       "seed_sd_median": 0.0035287597426523288,
       "seed_sd_max": 0.006284278725129617
+    }
+  },
+  "whole_spine_rigid_seed0": {
+    "n_cases": 34,
+    "seed": 0,
+    "transform_unit": "One R,t shared by L1-L5",
+    "before_gap": {
+      "mean": 0.03645859152963834,
+      "ci95": [
+        0.02666770498076262,
+        0.04589997968037662
+      ]
+    },
+    "after_gap": {
+      "mean": 0.02624364742503696,
+      "ci95": [
+        0.009781143190230233,
+        0.03787797740669527
+      ]
+    },
+    "gap_reduction": {
+      "mean": 0.010214944104601381,
+      "ci95": [
+        0.001789968126400341,
+        0.020941160100495577
+      ]
+    },
+    "fraction_gap_reduced": 0.2801793397942246,
+    "bootstrap": {
+      "unit": "case",
+      "replicates": 10000,
+      "seed": 20261117
+    },
+    "uses_ground_truth": true,
+    "deployment_method": false
+  },
+  "rigid_seed0_model_means": {
+    "A0R": {
+      "raw_dice": 0.8244197997846898,
+      "global_rigid_dice": 0.8318603634605912,
+      "independent_rigid_dice": 0.8370544442965008,
+      "global_hd95_mm": 4.397860293074997,
+      "foreground_volume_drift": 3.0278834072939395e-05
+    },
+    "main": {
+      "raw_dice": 0.7879612082550512,
+      "global_rigid_dice": 0.8056167160355543,
+      "independent_rigid_dice": 0.823197262657137,
+      "global_hd95_mm": 4.689370711039739,
+      "foreground_volume_drift": 2.2957212479981242e-05
     }
   }
 }

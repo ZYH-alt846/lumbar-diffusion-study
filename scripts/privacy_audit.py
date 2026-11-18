@@ -23,7 +23,7 @@ def inspect_git_index(expected):
     """Check actual staged bytes as well, so a clean working copy cannot mask them."""
     findings=[]
     try:
-        top=subprocess.run(['git','-C',str(ROOT),'rev-parse','--show-toplevel'],capture_output=True,text=True)
+        top=subprocess.run(['git','-C',str(ROOT),'rev-parse','--show-toplevel'],capture_output=True,text=True,encoding='utf-8')
         if top.returncode or Path(top.stdout.strip()).resolve()!=ROOT.resolve():return findings
         result=subprocess.run(['git','-C',str(ROOT),'ls-files','-z'],capture_output=True)
         if result.returncode:return [{'file':'.git/index','reason':'index_read_failed'}]

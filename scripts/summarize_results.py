@@ -16,5 +16,6 @@ output = {'cohort': 'internal_select', 'n_cases': 34,
           'quality_dice_threshold': best+0.01, 'quality_dice_pass': main >= best+0.01,
           'joint_condition_mean_difference': diagnostics['donor_joint_condition']['mean_difference'],
           'translation_fraction_gap_reduced': diagnostics['translation']['fraction_gap_reduced'],
-          'rigid_seed0_fraction_gap_reduced': diagnostics['rigid_seed0']['fraction_gap_reduced']}
+          'independent_per_vertebra_rigid_seed0_fraction_gap_reduced': diagnostics['rigid_seed0']['fraction_gap_reduced'],
+          'shared_whole_spine_rigid_seed0_fraction_gap_reduced': diagnostics['whole_spine_rigid_seed0']['fraction_gap_reduced']}
 print(json.dumps(output, indent=2))
